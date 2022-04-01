@@ -1,0 +1,21 @@
+CREATE USER 'Admin'@'localhost';
+CREATE USER 'Admin'@'127.0.0.1';
+CREATE USER 'Admin'@'::1';
+
+SET PASSWORD
+FOR 'Admin'@'localhost'= PASSWORD('ORANGEHRM123$%');
+
+SET PASSWORD
+FOR 'Admin'@'127.0.0.1'= PASSWORD('ORANGEHRM123$%');
+
+SET PASSWORD
+FOR 'Admin'@'::1'= PASSWORD('ORANGEHRM123$%');
+
+GRANT ALL PRIVILEGES ON
+'orangehrm'.*TO 'Admin'@'localhost' WITH GRANT OPTION;
+
+GRANT ALL PRIVILEGES ON
+'orangehrm'.*TO 'Admin'@'127.0.0.1' WITH GRANT OPTION;
+
+GRANT ALL PRIVILEGES ON
+'orangehrm'.*TO 'Admin'@'::1' WITH GRANT OPTION;
