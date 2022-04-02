@@ -2,6 +2,8 @@ CREATE USER 'Admin'@'localhost';
 CREATE USER 'Admin'@'127.0.0.1';
 CREATE USER 'Admin'@'::1';
 
+hello
+
 SET PASSWORD
 FOR 'Admin'@'localhost'= PASSWORD('ORANGEHRM123$%');
 
